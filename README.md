@@ -48,17 +48,19 @@ triggercontract 《智能合约地址 TMbeJmpG1nrvMJYQeqSXyvWxg6qcqf7EwL》 fibo
 
 返回数据示例
 ```
-{
-  "block_number": 300,
-  "block_timestamp": 1534237563000,
-  "contract_address": "TMbeJmpG1nrvMJYQeqSXyvWxg6qcqf7EwL",
-  "event_name": "Notify",
-  "result": [
-    "7",
-    "13"
-  ],
-  "transaction_id": "1b892ca7c885cf5038d2c100850a80ec88295769369c8b0cfa00331234facd3c"
-}
+[
+  {
+    "block_number": 300,
+    "block_timestamp": 1534237563000,
+    "contract_address": "TMbeJmpG1nrvMJYQeqSXyvWxg6qcqf7EwL",
+    "event_name": "Notify",
+    "result": [
+      "7",
+      "13"
+    ],
+    "transaction_id": "1b892ca7c885cf5038d2c100850a80ec88295769369c8b0cfa00331234facd3c"
+  }
+]
 ```
 数据格式说明：
 ```
