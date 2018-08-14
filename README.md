@@ -78,8 +78,12 @@ transaction_id:交易ID
 
 
 ## 编译
+```
 mvn package
+```
 
 ## 运行
+```
 cd target
 nohup java -jar infura-0.0.1-SNAPSHOT.jar &
+```
