@@ -10,15 +10,19 @@ test_ev2分支
 
 ## 有以下四种查询方式
 1、根据合约地址进行查询
+<br>
 curl http://52.44.75.99:18889/event/contract/TMbeJmpG1nrvMJYQeqSXyvWxg6qcqf7EwL
 
 2、根据合约地址以及事件名称进行查询
+<br>
 curl http://52.44.75.99:18889/event/contract/TMbeJmpG1nrvMJYQeqSXyvWxg6qcqf7EwL/Notify
 
 3、根据合约地址、事件名称以及所在的区块高度进行查询
+<br>
 curl http://52.44.75.99:18889/event/contract/TMbeJmpG1nrvMJYQeqSXyvWxg6qcqf7EwL/Notify/300
 
 4、、根据交易ID进行查询
+<br>
 curl http://52.44.75.99:18889/event/transaction/1b892ca7c885cf5038d2c100850a80ec88295769369c8b0cfa00331234facd3c
 
 原始合约代码
