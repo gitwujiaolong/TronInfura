@@ -8,13 +8,13 @@ public interface EventLogRepository extends MongoRepository<EventLogEntity, Stri
   @Override
   List<EventLogEntity> findAll();
 
-  EventLogEntity findByTransactionId(String transactionId);
+  List<EventLogEntity> findByTransactionId(String transactionId);
 
-  EventLogEntity findByContractAddress(String contractAddress);
+  List<EventLogEntity> findByContractAddress(String contractAddress);
 
-  EventLogEntity findByContractAddressAndEntryName(String contractAddress, String entryName);
+  List<EventLogEntity> findByContractAddressAndEntryName(String contractAddress, String entryName);
 
-  EventLogEntity findByContractAddressAndEntryNameAndBlockNumber(String contractAddress,
+  List<EventLogEntity> findByContractAddressAndEntryNameAndBlockNumber(String contractAddress,
       String entryName, Long blockNumber);
 
 }
