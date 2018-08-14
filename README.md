@@ -21,6 +21,30 @@ curl http://52.44.75.99:18889/event/contract/TMbeJmpG1nrvMJYQeqSXyvWxg6qcqf7EwL/
 4、、根据交易ID进行查询
 curl http://52.44.75.99:18889/event/transaction/1b892ca7c885cf5038d2c100850a80ec88295769369c8b0cfa00331234facd3c
 
+原始合约代码
+```
+pragma solidity ^0.4.2;
+
+contract Fibonacci {
+
+    event Notify(uint input, uint result);
+
+    function fibonacci(uint number) constant returns(uint result) {
+        if (number == 0) return 0;
+        else if (number == 1) return 1;
+        else return Fibonacci.fibonacci(number - 1) + Fibonacci.fibonacci(number - 2);
+    }
+
+    function fibonacciNotify(uint number) returns(uint result) {
+        result = fibonacci(number);
+        Notify(number, result);
+    }
+}
+```
+调用fibonacciNotify后，会触发Notify事件，
+```
+triggercontract 《智能合约地址 TMbeJmpG1nrvMJYQeqSXyvWxg6qcqf7EwL》 fibonacciNotify(uint256) 7 false 1000000 0000000000000000000000000000000000000000000000000000000000000000
+```
 
 返回数据示例
 ```
