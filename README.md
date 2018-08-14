@@ -75,3 +75,11 @@ event_name:事件名
 result:事件参数
 transaction_id:交易ID
 ```
+
+
+## 编译
+mvn package
+
+## 运行
+cd target
+nohup java -jar infura-0.0.1-SNAPSHOT.jar &
