@@ -4,12 +4,11 @@ JavaTron工程参见：
 ```
 https://github.com/tronprotocol/java-tron
 test_ev2分支
-```
 核心逻辑请参考：org.tron.core.db.Manager#sendEventLog
-该工程用于向MongoDB发送事件数据
+```
 
 
-##有以下四种查询方式
+## 有以下四种查询方式
 1、根据合约地址进行查询
 curl http://52.44.75.99:18889/event/contract/TMbeJmpG1nrvMJYQeqSXyvWxg6qcqf7EwL
 
